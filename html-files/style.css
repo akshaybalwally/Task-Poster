@@ -1,0 +1,138 @@
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    min-width: 650px;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color:#444;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;    
+}
+
+#wrapper{
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+}
+
+.account{
+    float:right;
+}
+
+header h1{
+    clear: both;
+}
+
+body {
+
+    width: 100%;
+}
+
+.content{
+
+    width: 100%;
+}
+
+.left{
+
+    width: 42.5%;
+    padding: 2.5%;
+    float: left;
+}
+
+.right {
+
+    width: 42.5%;
+    padding: 2.5%;
+    float: right;
+}
+
+.job-name{
+
+    width: 100%;
+    padding: 50px 0;
+    margin: 0;
+    clear: both;
+    border-radius: 20px;
+    border: 2px solid #002021;
+    height: 200px;
+    vertical-align: top;
+}
+
+.description{
+    float:left;
+    width:40%;
+    padding-left: 10%;
+    display: inline-block;
+}
+
+.description li{
+    list-style: none;
+    font-size: 25px;
+}
+
+.price{
+    float: left;
+    width: 15%;
+    padding:0 15%;
+    display: inline-block;
+    padding-top: -15px;
+}
+
+.btn{
+     background-color: #03A20D;
+     border-radius: 20px;
+    height: 75px;  
+}
+
+.accept-btn{
+    width: 20%;
+    margin-right: 10%;
+    float: right;
+    display: inline-block;
+}
+
+img{
+    text-align: center;
+    font-size: 25px;
+}
