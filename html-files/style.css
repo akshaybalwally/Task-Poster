@@ -73,6 +73,12 @@ body {
     width: 100%;
 }
 
+#personal-info .left{
+
+    width: auto;
+    display: inline;
+}
+
 .left{
 
     width: 42.5%;
@@ -134,5 +140,16 @@ body {
 
 img{
     text-align: center;
+    font-size: 25px;
+}
+
+#current-jobs, #posted-jobs{
+
+    clear: both;
+}
+
+.input-field{
+    height: 50px;
+    width: 50%;
     font-size: 25px;
 }

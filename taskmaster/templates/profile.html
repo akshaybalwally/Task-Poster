@@ -1,0 +1,49 @@
+		{% extends 'base.html' %}
+		{% block content %}
+		<div id = "content">
+			<div id="personal-info">
+				<h2 style="text-align:left; margin-bottom: 0">Your Info</h2>
+				<div class="left">
+					<p>Name:</p>
+					<p>Email:</p>
+				</div>
+				<div class="left" style="padding-left: 15px;">
+					<p>{{name}}</p>
+					<p>{{email}}</p>
+				</div>
+			</div>
+			<div id="current-jobs">
+				<h2>Your Current Jobs</h2>
+				{% for category in categories %}
+				<div class = "job-name">
+		 			<div class = "description">
+		 				<li class = "name">Name: {{Poster_name}}</li>
+		 				<li class = "job">Job: {{job}}</li>
+		 				<li class = "location">Location: {{location}}</li>
+		 			</div>
+		 			<div class = "price">
+		 				<h3>${{price}}</h3>
+		 			</div>
+		 		</div>
+		 		{% endfor %}
+	 		</div>
+	 		{% endblock %}
+	 		{% block content %}
+	 		<div id="posted-jobs">
+	 			<h2>Your Posted Jobs</h2>
+	 			{% for category in categories %}
+				<div class = "job-name">
+		 			<div class = "description">
+		 				<li class = "name">Name: {{name}}</li>
+		 				<li class = "job">Job: {{job}}</li>
+		 				<li class = "location">Location: {{location}}</li>
+		 			</div>
+		 			<div class = "price">
+		 				<h3>${{price}}</h3>
+		 			</div>
+		 		</div>
+		 		{% endfor %}
+	 		</div>
+	 	</div>
+
+{% endblock %}

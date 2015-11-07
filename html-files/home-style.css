@@ -18,6 +18,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     min-width: 650px;
 }
@@ -34,11 +35,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 35px;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h3{
@@ -51,33 +52,40 @@ p{
 
 #wrapper{
     width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.75);
     display: block;
+    z-index: 1;
+    position:absolute;
     margin-left: 10%;
-}
-
-.account{
-    float:right;
-}
-
-header h1{
-    clear: both;
+    margin-top: 10vh;
+    color: #FFFFFF;
 }
 
 body {
 
     width: 100%;
+    height: 100vh;
+    background: url('laptop-849799_1920.jpg') no-repeat center center fixed;
+    z-index: 2;
+    background-size: cover;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
 }
 
 .content{
 
-    width: 100%;
+    width: 80%;
 }
 
 .left{
 
-    width: 42.5%;
+    width: 47%;
     padding: 2.5%;
     float: left;
+    border-right: 2px solid #002021;
 }
 
 .right {
@@ -87,52 +95,15 @@ body {
     float: right;
 }
 
-.job-name{
+.submit-btn{
 
+}
+
+form{
     width: 100%;
-    padding: 50px 0;
-    margin: 0;
-    clear: both;
-    border-radius: 20px;
-    border: 2px solid #002021;
-    height: 200px;
-    vertical-align: top;
+    margin-left: 20%;
 }
 
-.description{
-    float:left;
-    width:40%;
-    padding-left: 10%;
-    display: inline-block;
-}
-
-.description li{
-    list-style: none;
-    font-size: 25px;
-}
-
-.price{
-    float: left;
-    width: 15%;
-    padding:0 15%;
-    display: inline-block;
-    padding-top: -15px;
-}
-
-.btn{
-     background-color: #03A20D;
-     border-radius: 20px;
-    height: 75px;  
-}
-
-.accept-btn{
-    width: 20%;
-    margin-right: 10%;
-    float: right;
-    display: inline-block;
-}
-
-img{
-    text-align: center;
-    font-size: 25px;
+input{
+    margin:0 auto;
 }
