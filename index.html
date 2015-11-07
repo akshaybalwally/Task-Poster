@@ -1,0 +1,28 @@
+
+		{% extends 'base.html' %}
+		{% block content %}
+		</div id = "content">
+	 		{% for category in categories %}
+	 			<div class = "description">
+	 				<li class = "name">{{% category.name %}}</li>
+	 				<li class = "job">{{% category.job %}}</li>
+	 				<li class = "location">{{%category.location%}}</li>
+	 			</div>
+	 			<div class = "price">
+	 				<h3>{{% category.price %}}</h3>
+	 			</div>
+	 			<!--PLEASE SET progress FOR THE ORIGINAL POSTER TO TRUE WHEN ACCEPT-BTN IS CLICKED. -->
+	 			<div class = "accept-btn">
+	 				<h3>Accept</h3>
+	 			</div>
+	 		{% endfor %}
+	 	</div>
+	 	{% endblock %}
+
+	 	{% block content %}
+	 	{% if progress %}
+	 		<div class = "progress">
+	 			<h2>{{% progress.name %}} is currently working on your job! Hit pay when your job has been completed!</h2>
+	 			<!--PLEASE SET progress TO FALSE WHEN THE FOLLOWING BUTTON IS CLICKED-->
+	 		</div>
+	 	{% endif %}

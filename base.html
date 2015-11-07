@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Post Exchange</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id = "wrapper">
+		<header>
+			<h1>Post Exchange</h1>
+			{% block content %}
+			<div class = "account">
+				{%if loggedIn%}
+					<p>Hi {{% loggedIn.name %}}</p>
+				{% else %}
+				<a href="#"><p>Log In</p></a>
+				{% endif %}
+			</div>
+			{% endblock %}
+		</header>
+		{% block content %}
+
+		{% endblock %}
+		<footer></footer>
+	</div>
+</body>
