@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Post Exchange</title>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+	<div id = "wrapper">
+		<header>
+			<h1>Task Exchange</h1>
+			{% block content %}
+			<div class = "account">
+					<p>Hi <a href="#">{{name}}</a></p>
+			</div>
+			{% endblock %}
+		</header>
+		{% block content %}
+
+		{% endblock %}
+		<footer></footer>
+	</div>
+</body>

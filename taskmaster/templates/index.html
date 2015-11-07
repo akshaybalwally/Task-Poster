@@ -1,0 +1,37 @@
+
+		{% extends 'base.html' %}
+		{% block content %}
+		</div id = "content">
+	 		{% for category in categories %}
+			<div>
+				<h2 class="left" style="width: 65%; display: inline-block">Search for a job below or<br>post one of your own!</h2>
+				<div class=" btn accept-btn" style="margin-top: 60px;">
+					<h3>Post Job</h3>
+				</div>
+			</div>
+			<div class = "job-name">
+	 			<div class = "description">
+	 				<li class = "name">{{category.name}}</li>
+	 				<li class = "job">{{category.job}}</li>
+	 				<li class = "location">{{category.location}}</li>
+	 			</div>
+	 			<div class = "price">
+	 				<h3>{{category.price}}</h3>
+	 			</div>
+	 			<!--PLEASE SET progress FOR THE ORIGINAL POSTER TO SHOW THE BOTTOM DIV WHEN ACCEPT-BTN IS CLICKED. -->
+	 			<form name="_xclick" action="https://www.paypal.com/uk/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_xclick">
+					<input type="hidden" name="business" value="dc.daniel.chao@gmail.com">
+					<input type="hidden" name="currency_code" value="USD">
+					<input type="hidden" name="item_name" value="sex">
+					<input type="hidden" name="amount" value=".01">
+					<input type="image" class="btn accept-btn" name="submit" alt="Accept" value="Accept" style="display: block; font-weight: bold; font-size: 25px; text-align: center; padding-top: 25px;">
+				</form>
+	 		</div>
+	 		{% endfor %}
+	 	</div>
+	 	{% endblock %}
+
+	 	{% block content %}
+	 	{% if progress %}
+	 	{% endif %}

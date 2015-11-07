@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div id = "content">
+		<form method="post">
+			<!--SAVE THESE IN VARIABLES - THEY WILL BE CALLED ON LATER-->
+		    <label>Your name: </label>
+		    <input class="input-field" type="text" name="name" value="Name"><br>
+		    <label>What job do you need done?</label>
+		    <input class="input-field" type="text" name="job" value="Job"><br>
+		    <label>Where is the job?</label>
+		    <input class="input-field" type="text" name="location" value="Location"><br>
+		    <label>How much do you want to charge?</label>
+		    <input class="input-field" type="text" name="price" value="Price"><br>
+		    <input type="submit" value="Submit">
+		</form>	
+	</div>
+{% endblock %}
